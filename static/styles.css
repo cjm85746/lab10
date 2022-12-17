@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+.tictactoeboard {
+    border-collapse: collapse;
+    font-size: 32 px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+button{
+    display:block;
+    width:240px;
+    height:40px;
+    text-align:center;
+    background-color:#222;
+    color:#fff;
+    text-decoration: none;
+    margin:auto;
+}
+
+a.button{
+    display:block;
+    width:240px;
+    line-height:30px;
+    text-align:center;
+    background-color:#222;
+    color:#fff;
+    text-decoration: none;
+    margin:auto;
+}
+
+div.center_aligned{
+    text-align: center;
+    width: 100vw;
+    width: 100vh;
+    justify-content: center;
+}
+
+h1{
+    font-size: 32px;
+    font-family: Poppins, medium;
+    background-color: #222;
+    color:#fff;
+    width: 100vw;
+}
+
+h2{
+    font-size: 20px;
+    font-family: Poppins, light;
+}
+
+.user_name{
+    color: rgb(255, 255, 255);
+}
+
+label{
+    font-size: 14px;
+    font-family: Poppins, regular;
+    color: gray;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid gainsboro;
+    display: inline;
+    padding-top: 40px;
+    width: 235px;
+}
+
+a{
+    font-size: 14px;
+    font-family: Poppins, regular;
+}
+
+p.sign_in{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.light, .dark {
+    width: 72px;
+    height: 72px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.light {
+    background: rgb(255,236,203);
+}
+
+.dark{
+    background:rgb(34, 204, 227)
+}
+
+
+.tableheader{
+    width: 72px;
+    height: 36px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background: rgb(44, 47, 53);
+    color: rgb(255, 255, 255);
+}
+
+.tlight, .tdark {
+    width: 72px;
+    height: 36px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.tlight {
+    background: rgb(174, 189, 218);
+}
+
+.tdark{
+    background:rgb(79, 149, 234)
+}

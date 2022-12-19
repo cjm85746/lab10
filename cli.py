@@ -37,14 +37,12 @@ if __name__ == '__main__':
 
         #Play game
         while ttt.winner == None:
-            #show the board
             print("TODO: take a turn!")
             for i in ttt.board:
                 print (i)
 
             # if human - allow input
             if ttt.player_type[ttt.player]:
-
                 print("input a row number (1-3)")
                 a = int(input ())
                 print("input a column number (1-3)")

@@ -7,16 +7,15 @@ import pandas as pd
 
 
 class TicTacToe:
-
     def __init__(self):
         """
         Set up a game by initializing board, player type, Player, Winner, Count
         """
-        self.board = [
-            [None,None,None],
-            [None,None,None],
-            [None,None,None]
-        ]
+        self.board = {
+            1:' ', 2: ' ', 3:' ',
+            4: ' ', 5:' ', 6:' ',
+            7:' ', 8:' ', 9:' '
+        }
 
         self.re_board = pd.DataFrame(columns=[
             "Game ID",

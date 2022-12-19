@@ -1,28 +1,38 @@
 <link rel="stylesheet" href = "/static/styles.css">
 
-<table class = "statboard">
-    <tr class="tableheader">
-        <td> Game ID</td>
-        <td >Player 1</td>
-        <td > Player 2</td>
-        <td> Winner</td>
-    </tr>
-    <tr class="tlight">
-        <td>1</td>
-        <td >O</td>
-        <td >X</td>
-        <td >O</td>
-    </tr>
-    <tr class="tdark">
-        <td >2</td>
-        <td>O</td>
-        <td>X</td>
-        <td >O</td>
-    </tr>
-    <tr class="tlight">
-        <td>3</td>
-        <td>O</td>
-        <td>X</td>
-        <td >X</td>
-     </tr>
-</table>
+<div class="center_aligned">
+    <h1> welcome to your play history, {{name}}! </h1>
+</div>
+
+<div class="center_aligned">
+
+    <table class = "statboard">
+        <tr class="tableheader">
+            <td> Game ID</td>
+            <td >Player 1</td>
+            <td > Player 2</td>
+            <td> Winner</td>
+        </tr>
+        <tr class="tlight">
+            <td>1</td>
+            <td >O</td>
+            <td >X</td>
+            <td >O</td>
+        </tr>
+        <tr class="tdark">
+            <td >2</td>
+            <td>O</td>
+            <td>X</td>
+            <td >O</td>
+        </tr>
+        <tr class="tlight">
+            <td>3</td>
+            <td>O</td>
+            <td>X</td>
+            <td >X</td>
+        </tr>
+    </table>
+
+<a href= "/play/{{name}}" type ="submit" class="button">back to play</a>
+
+</div>

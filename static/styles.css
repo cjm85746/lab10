@@ -1,38 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
 
-.tictactoeboard {
-    border-collapse: collapse;
-    font-size: 32 px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* blocks */
 body{
     background-color: whitesmoke;
-}
-
-button{
-    display:block;
-    width:240px;
-    height:40px;
-    text-align:center;
-    background-color:#222;
-    color:#fff;
-    text-decoration: none;
-    margin:auto;
-}
-
-a.button{
-    display:block;
-    width:240px;
-    line-height:30px;
-    text-align:center;
-    background-color:#222;
-    color:#fff;
-    text-decoration: none;
-    margin:auto;
 }
 
 div.center_aligned{
@@ -40,64 +11,53 @@ div.center_aligned{
     width: 100vw;
     width: 100vh;
     justify-content: center;
+    margin-top:32px;
+    margin-bottom: 32px;
 }
 
-h1{
-    font-size: 32px;
-    font-family: Poppins, medium;
-    background-color: #222;
-    color:#fff;
+div.left_aligned{
+    text-align: center;
     width: 100vw;
-}
-
-h2{
-    font-size: 20px;
-    font-family: Poppins, light;
-}
-
-.user_name{
-    color: rgb(255, 255, 255);
-}
-
-label{
-    font-size: 14px;
-    font-family: Poppins, regular;
-    color: gray;
-}
-
-input {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid gainsboro;
-    display: inline;
-    padding-top: 40px;
-    width: 235px;
-}
-
-a{
-    font-size: 14px;
-    font-family: Poppins, regular;
+    width: 100vh;
+    justify-content: left;
+    margin-left: -40px;
+    margin-bottom: 32px;
+    margin-top: 32px;
 }
 
 p.sign_in{
     margin-top: 40px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right:auto;
 }
 
-.light, .dark {
+
+
+
+/* boards */
+.tictactoeboard {
+    border-collapse: collapse;
+    font-size: 32 px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+}
+
+
+
+
+.light {
     width: 72px;
     height: 72px;
     padding: 0px;
     margin: 0px;
     text-align: center;
-}
-
-.light {
-    background: rgb(255,236,203);
-}
-
-.dark{
-    background:rgb(34, 204, 227)
+    border-style:solid;
+    background: rgb(225, 225, 225);
+    font-family: Poppins, rgular;
+    font-size: 24px;
 }
 
 
@@ -125,4 +85,160 @@ p.sign_in{
 
 .tdark{
     background:rgb(79, 149, 234)
+}
+
+.statboard{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* buttons */
+
+
+button.wide{
+    display:block;
+    width:240px;
+    height:40px;
+    text-align:center;
+    background-color:#222;
+    color:#fff;
+    text-decoration: none;
+    margin:auto;
+}
+
+button.tiles{
+    background: rgb(225, 225, 225);
+    font-family: Poppins, rgular;
+    font-size: 24px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color:rgb(48, 48, 48);
+}
+
+
+a.button{
+    display:block;
+    width:240px;
+    line-height:30px;
+    text-align:center;
+    background-color:#222;
+    color:#fff;
+    text-decoration: none;
+    margin:auto;
+    margin-top: 48px;
+}
+
+/* texts */
+
+h1{
+    font-size: 32px;
+    font-family: Poppins, medium;
+    background-color: #222;
+    color:#fff;
+    width: 100vw;
+}
+
+h2{
+    font-size: 20px;
+    font-family: Poppins, light;
+}
+
+.user_name{
+    color: rgb(255, 255, 255);
+}
+
+label{
+    font-size: 14px;
+    font-family: Poppins, regular;
+    color: gray;
+}
+
+input.line {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid gainsboro;
+    display: inline;
+    padding-top: 40px;
+    width: 235px;
+}
+
+input.hidden{
+  background: transparent;
+  color: transparent;
+  border: none;
+  height: 0px;
+  width:32px;
+}
+
+a{
+    font-size: 14px;
+    font-family: Poppins, regular;
+}
+
+
+
+
+/* toggle button */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #49534d;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
 }

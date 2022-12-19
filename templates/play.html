@@ -2,31 +2,86 @@
 
 
 
-</div>
 <div class="center_aligned">
 <h1> welcome {{name}}! </h1>
-<h2> play the game</h2>
-<h2> O's turn!</h2>
 </div>
 
+
+<div class="left_aligned">
+    <label class="toggle">
+        <input class="toggle-checkbox" type="checkbox">
+        <div class="toggle-switch"></div>
+        <span class="toggle-label">multi-player</span>
+    </label>
+</div>
+
+
+
 <div class="center_aligned">
+    <h2> it is {{player}} turn</h2>
     <table class="tictactoeboard">
         <tr>
-            <td class="light"></td>
-            <td class="dark"></td>
-            <td class="light"></td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value="1" name="tile1">
+                    <button class="tiles" type="submit">{{mark1}}</button>
+                </form>
+            </td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="2" name="tile1">
+                    <button class="tiles" type="submit">{{mark2}}</button>
+                </form>
+            </td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="3" name="tile1">
+                    <button class="tiles" type="submit">{{mark3}}</button>
+                </form>
+            </td>
         </tr>
         <tr>
-            <td class="dark"></td>
-            <td class="light"></td>
-            <td class="dark"></td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="4" name="tile1">
+                    <button class="tiles" type="submit">{{mark4}}</button>
+                </form>
+            </td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="5" name="tile1">
+                    <button class="tiles" type="submit">{{mark5}}</button>
+                </form>
+            </td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="6" name="tile1">
+                    <button class="tiles" type="submit">{{mark6}}</button>
+                </form>
+            </td>
         </tr>
         <tr>
-            <td class="light"></td>
-            <td class="dark"></td>
-            <td class="light"></td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="7" name="tile1">
+                    <button class="tiles" type="submit">{{mark7}}</button>
+                </form>
+            </td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="8" name="tile1">
+                    <button class="tiles" type="submit">{{mark8}}</button>
+                </form>
+            </td>
+            <td class="light">
+                <form method="POST">
+                    <input class="hidden" type="int" value ="9" name="tile1">
+                    <button class="tiles" type="submit">{{mark9}}</button>
+                </form>
+            </td>
         </tr>
     </table>
-
-    <a class="button">stats</a>
+    
+    <a href= "/stats/{{name}}" type ="submit" class="button">play history</a>
+    
 </div>
